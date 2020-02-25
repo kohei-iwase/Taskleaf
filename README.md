@@ -1,5 +1,13 @@
 # README
 
+slims習得のための練習用タスク管理アプリケーション
+主な機能
+・タスクの登録
+・タスクの編集
+・タスクの一覧
+・タスクの削除
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
