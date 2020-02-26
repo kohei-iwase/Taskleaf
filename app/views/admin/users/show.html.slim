@@ -14,8 +14,8 @@ h1 タスクの詳細
 				th= User.human_attribute_name(:email)
 				td= @user.email
 			tr
-				th= User.human_attribute_name(:created_at)
-				td= @user.admin? ? 'あり'　: 'なし'
+				th= User.human_attribute_name(:admin)
+				td= @user.admin? ? "あり" : "なし"
 			tr
 				th= User.human_attribute_name(:created_at)
 				td= @user.created_at
