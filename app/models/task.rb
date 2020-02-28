@@ -1,5 +1,5 @@
 class Task < ApplicationRecord
-	before_validation :set_nameless_name
+#	before_validation :set_nameless_name
 	belongs_to :user
 	validates 	:name, presence: true, length:{ maximum: 30 }
 	validate 	:validate_name_not_including_comma
@@ -11,6 +11,6 @@ class Task < ApplicationRecord
 
 #シングルクオーテーションにするとたまにバグる
 		def set_nameless_name
-			self.name = "名前なし" if name.blank?
+			self.name = "件名なし" if name.blank?
 		end
 end
